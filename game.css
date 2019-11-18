@@ -1,0 +1,60 @@
+h1 {
+    text-align: center;
+}
+
+#game {
+    width: 600px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#start {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ceil {    
+    border: solid 1px black;
+    width: 200px;
+    height: 200px;   
+    box-sizing: border-box;
+}
+
+.cross {
+    background-image: url(assets/cross.jpg);
+    background-size: 100% 100%;
+    background-color: red;
+}
+
+.zero {  
+    background-image: url(assets/zero.jpg);
+    background-size: 100% 100%;
+    background-color: green;    
+}
+
+.btn {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    #game{
+        width: 400px;
+    }
+    .ceil {
+        width: 133px;
+        height: 133px;   
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #game{
+        width: 350px;
+    }
+    .ceil {
+        width: 116px;
+        height: 116px;   
+    }
+}
